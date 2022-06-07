@@ -45,7 +45,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tapjko.azurecr.io/jkolaric/tap-workload/spring-petclinic-default@sha256:3e074878b7776f4fd1b072d1c3efd93d2b0965b810c7599692df90073841ab67
+        image: tapjko.azurecr.io/jkolaric/tap-workload/spring-petclinic-default@sha256:a3137a1d17f7640966b21d52a2c2a85787339e2f505115c84d1f0a1c99bed19b
         livenessProbe:
           httpGet:
             path: /livez
